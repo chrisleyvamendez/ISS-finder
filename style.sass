@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:ital,wght@1,700&family=Open+Sans:wght@600&family=Poppins:ital,wght@0,300;1,500&family=Roboto:wght@900&family=Spline+Sans:wght@600&display=swap')
+//color themes
+$mauve: #caa8f5ff
+$medium-purple: #9984d4ff
+$ksu-purple: #592e83ff
+$dark-purple: #230c33ff
+$blast-off-bronze: #b27c66ff
+//default settings for the project
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: sans-serif
+
+html
+
+  background-color: #8BC6EC
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)
+
+
+
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+
+header
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2)
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  background-color: rgba(255, 255, 255, 0.4)
+  text-align: center
+  height: 9vh
+  h1
+    padding: 10px
+    font-family: 'Spline Sans',sans-serif
+    font-size: 3rem
+    color: $mauve
+
+
+
+.details
+  isolation: isolate
+
+  background: white
+  display: block
+  align-items: center
+  width: fit-content
+  flex-direction: column
+  border-radius: 10px
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2)
+  padding: 20px
+  margin: 2rem
+  h5
+
+    padding: 5px
+    font-size: 1.9rem
+  p
+    font-size: 1.5rem
+    font-weight: 600
+
+  #lat, #long
+    margin-left: 20px
+
+
+
+#issMap
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2)
+  display: flex
+  border-radius: 15px
+  height: 65vh
+  width: 1200px
+
+//util classes
+.gradient-text
+  background: -webkit-linear-gradient(#d5e873, #6defc6)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+@media only screen and (max-width: 720px)
+  #issMap
+    height: 56vh
+    width: 45vh
+
+
